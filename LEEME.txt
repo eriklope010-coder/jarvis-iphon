@@ -1,0 +1,20 @@
+JARVIS 11 - INSTALACIÓN
+1. Descomprime este ZIP.
+2. En GitHub crea un repositorio nuevo (por ejemplo jarvis-iphone11), o sube y sustituye los archivos en el repositorio actual. Todos deben quedar en la raíz.
+3. En Settings > Pages: Deploy from a branch, main, /(root), Save.
+4. Abre https://TU-USUARIO.github.io/NOMBRE-REPOSITORIO/ en Safari en tu iPhone.
+5. Compartir > Añadir a pantalla de inicio > Abrir como app web (si aparece).
+
+FUNCIONES
+- Botón único para iniciar/terminar la llamada, con intento de reescucha automática.
+- Chistes, curiosidades, fecha, hora, cálculos sencillos y comandos de apertura de apps.
+- Texto como alternativa al micrófono.
+- Voz sintetizada del navegador.
+- IA online OPCIONAL mediante servidor propio HTTPS que reciba POST {message,history} y responda {reply:"texto"} con CORS permitido para tu dominio. No introducir claves API en HTML ni en GitHub.
+
+LIMITACIONES REALES
+- En iOS la Web Speech API puede no estar disponible o no permitir reactivar el micrófono sin una nueva interacción. Si se detiene, pulsa reanudar; el chat escrito funciona sin reconocimiento de voz.
+- Una PWA no puede escuchar permanentemente en segundo plano ni con el iPhone bloqueado.
+- iOS puede bloquear enlaces de apps que no se abren directamente tras un toque. Se ofrece un botón como alternativa.
+- No se incluye ningún proveedor de IA ni API key; sin configurar un servidor, JARVIS solo responde a comandos locales.
+- Para usar la voz, Safari puede necesitar permisos de micrófono y conexión a Internet.
